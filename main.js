@@ -1,39 +1,3 @@
-// const row = document.getElementsByTagName("tr");
-// const cells = document.querySelectorAll("td[contenteditable='true']") 
-// console.log(cells);
-
-
-// document.addEventListener("DOMContentLoaded", ()=>{
-//     const editBtns = document.getElementById("editBtn");
-//     const saveBtns = document.getElementById("saveBtn");
-
-
-//     editBtns.forEach(function(button){
-//         button.addEventListener("click", ()=>{
-//             const row = document.getElementsByTagName("tr");
-//             const cells = document.querySelectorAll("td[contenteditable='true']"); 
-//             cells.forEach(function(cell){
-//                 cell.setAttribute("contentEditable", "true");
-//             })
-//             button.style.display = "none";
-//             saveBtns.style.display = "block";
-//         })
-//     });
-
-//     saveBtns.forEach((button)=>{
-//         button.addEventListener("click", ()=>{
-//             const row = document.getElementsByTagName("tr");
-//             const cells = document.querySelectorAll("td[contenteditable='true']"); 
-//             cells.forEach(function(cell){
-//                 cell.setAttribute("contentEditable", "false");
-//             })
-//             button.style.display = "block";
-//             saveBtns.style.display = "none";
-//         })
-//     })
-
-// });
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const editButtons = document.querySelectorAll('#editBtn');
@@ -83,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   
-    // Check if there's any saved data in local storage and make the cells editable if needed
     const allCells = document.querySelectorAll('td[contenteditable="true"]');
     allCells.forEach(function(cell) {
       retrieveDataFromLocalStorage(cell);
