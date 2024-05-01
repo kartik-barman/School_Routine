@@ -1,0 +1,72 @@
+:root{
+    --primary-color : #f13a11;
+    --secondary-color : 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171819;
+    overflow: hidden;
+}
+.container{
+    width: 90%;
+    height: 400px;
+}
+.text{
+    text-align: center;
+    margin-top: -150px;
+    margin-bottom: 20px;
+}
+.text h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline overline crimson;
+}
+table {
+    background-color: #171819;
+    color: #fff;
+}
+th{
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid #111;
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+tr{
+    text-align: center;
+    padding: 50px;
+}
+td{
+    border: 1px solid #212122;
+    padding: 30px 50px;
+    font-weight: 600;
+    font-size: 20px;
+}
+#editBtn, #saveBtn{
+    font-size: 40px;
+    color: green;
+    cursor: pointer;
+}
+.day {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid #111;
+    padding: 10px 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
